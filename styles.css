@@ -105,6 +105,27 @@ header {
     background: var(--rule-dark);
 }
 
+.linkedin-pill{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download-pill {
+    background: var(--accent);
+    /* azul sólido en vez del azul claro */
+    color: #ffffff;
+    /* texto blanco */
+    text-decoration: none;
+    /* quita el subrayado del <a> */
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.download-pill:hover {
+    background: var(--accent-dk);
+    /* azul más oscuro al pasar el mouse */
+}
+
 .perfil-text {
     margin-top: 2rem;
     font-size: 17px;
@@ -432,5 +453,14 @@ footer {
 
     .proj-row {
         grid-template-columns: 1fr;
+    }
+
+    footer{
+        display: grid;
+    }
+
+    .name {
+        white-space: normal;
+        font-size: 4rem;
     }
 }
